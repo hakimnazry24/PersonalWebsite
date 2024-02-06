@@ -5,7 +5,9 @@ import { useEffect, useState } from "react"
 export default function test() {
     const [value, setValue] = useState(0);
     const [value1, setValue1] = useState(0);
-    useEffect(() => alert("testin"), [value]);
+    function printTxt(txt, i) {
+        document.getElementById("#type").innerHTML += txt.charAt(i);
+    }
 
     function handleValue() {
         setValue(value+1);
@@ -20,6 +22,9 @@ export default function test() {
             
             {value}
             {value1}
+
+            <span id="type"></span>
+
         </>
     )
 }
