@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className='m-10 '>
+    <div className='m-10 animate-fade-down animate-once'>
       <section className='mx-20 mb-16'>
       <Image
         src="/images/profile.png"
@@ -13,7 +13,7 @@ export default function Home() {
         alt="Picture of the author"
         className='rounded-3xl border- border-gray-900 border-4 m-auto'
     />
-      <h1 className='text-center text-5xl mt-3'>Hello, my name is <span className='underline underline-offset-3 decoration-black text-gray-200'>Hakim</span></h1>
+      <h1 className='text-center text-5xl mt-3 '>Hello, my name is <span className='underline underline-offset-3 decoration-black text-gray-200'>Hakim</span></h1>
       </section>
 
       <section className='mb-10'>
