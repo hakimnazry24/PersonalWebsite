@@ -13,7 +13,7 @@ export default function Home() {
         alt="Picture of the author"
         className='rounded-3xl border- border-gray-900 border-4 m-auto'
     />
-      <h1 className='text-center text-5xl'>Hello, my name is <span className='text-7xl underline underline-offset-3 decoration-black text-gray-200'>Hakim</span></h1>
+      <h1 className='text-center text-5xl mt-3'>Hello, my name is <span className='underline underline-offset-3 decoration-black text-gray-200'>Hakim</span></h1>
       </section>
 
       <section className='mb-10'>
