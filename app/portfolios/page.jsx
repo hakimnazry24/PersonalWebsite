@@ -1,7 +1,16 @@
+import PortfolioCard from "@/components/PortfolioCard"
+
 export default function portfolios() {
     return (
         <>
-            portfolios
+            <div className="animate-fade-down animate-once">
+                <h1 className="m-4 font-bold text-4xl text-center">Portfolios</h1>
+                <div className="m-10 grid grid-cols-3">
+                    <PortfolioCard portfolioLink={"https://donothing.vercel.app"} portfolioImage={"/images/donothing_web.png"} portfolioTitle={"\"Do Nothing\" Game"} portfolioDesc={"Do Nothing Game is a game where you do not have to do anything, just sit and relax. The purpose of this game is to help people escape from Internet fever for a while using an interactive way."}></PortfolioCard>
+                    <PortfolioCard portfolioLink={"https://hakimnazri.vercel.app"} portfolioImage={"/images/personal_website.png"} portfolioTitle={"Personal Website"} portfolioDesc={"This is my personal website. It contains my picture, biodata, portfolios of my projects, and my blogposts for various subjects. Everything related to software developments will be put here for documentation."}></PortfolioCard>
+                </div>
+            </div>
+            
         </>
     )
 }
