@@ -3,7 +3,6 @@ import Image from "next/image"
 export default function PortfolioCard({portfolioLink, portfolioImage, portfolioTitle, portfolioDesc}) {
     return (
         <>
-            
             <div className="max-w-md rounded-2xl border-gray-500 border-4 hover:animate-jump">
                 <a href={portfolioLink}>
                     <Image src={portfolioImage} width={500} height={500} className="rounded-t-2xl"></Image>
@@ -12,8 +11,7 @@ export default function PortfolioCard({portfolioLink, portfolioImage, portfolioT
                         <p className="mt-4">{portfolioDesc}</p>
                     </div>
                     </a>
-            </div>
-            
+            </div>          
         </>
     )
 }
