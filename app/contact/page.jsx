@@ -1,31 +1,32 @@
+import { FaTwitter } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+
 export default function contact() {
     return(
         <>
-            <section className="mt-32 text-white text-center" >
-                <h1 className=" text-4xl">Contact me</h1>
-                <div className="w-3/4 m-auto mt-10 sm:w-auto">
-                    <div className="columns-3 ">
-                        <div className="break-inside-avoid-column border-4 border-slate-200 rounded-2xl">
-                            <h2 className="text-xl font-bold">Email</h2>
-                            <p>
-                                hakimnazry@gmail.com<br></br>
-                                muhammadhakimbinmdnazri@gmail.com
-                            </p>
-                        </div>
-                        <div className="break-inside-avoid-column border-4 border-slate-200 rounded-2xl">
-                            <h2 className="text-xl font-bold">Phone</h2>
-                            <p>
-                                011-33939962
-                            </p>
-                        </div>
-                        <div className="break-inside-avoid-column border-4 border-slate-200 rounded-2xl">
-                            <h2 className="text-xl font-bold">Social media</h2>
-                            <p>
-                                X: @hakimnazry_<br></br>
-                                LinkedIn: linkedin.com/in/muhammad-hakim-bin-md-nazri-449a37247
-                            </p>
+            <section className="mt-32 mx-40 text-white " >
+                <h1 className="text-5xl font-bold">Reach me out!</h1>
+                <div className="my-16 w-1/3">
+                    <div className="my-8 flex justify-between">
+                        <p className="font-bold">Email</p>
+                        <p>hakimnazry@gmail.com</p>
+                    </div>
+                    <hr />
+                    <div className="my-8 flex justify-between">
+                        <p className="font-bold">Phone number</p>
+                        <p>011-33939962</p>
+                    </div>
+                    <hr />
+                    <div className="my-8 flex justify-between">
+                        <p className="font-bold">Social</p>
+                        <div className="flex gap-4">
+                            <p><a href="https://twitter.com/hakimnazry_"><FaTwitter></FaTwitter></a></p>
+                            <p><a href="https://github.com/hakimnazry24"><FaGithub></FaGithub></a></p>
+                            <p><a href="https://www.linkedin.com/in/muhammad-hakim-bin-md-nazri-449a37247/"><FaLinkedin></FaLinkedin></a></p>
                         </div>
                     </div>
+                    <hr />
                 </div>
             </section>
         </>
